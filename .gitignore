@@ -1,0 +1,35 @@
+# --- Python / uv ---
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# --- tool caches ---
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- game runtime output ---
+# save data defaults to ~/.twinjokers/save.json (outside the repo);
+# these cover TWINJOKERS_SAVE pointed inside the repo
+save/
+*.save.json
+# visual QA screenshots (TWINJOKERS_SCREENSHOT / TWINJOKERS_SHOT_DIR); curated ones live in docs/
+.qa/
+# sound exports from pyxel Sound.save
+*.wav
+
+# --- editors / OS ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# --- local secrets / settings ---
+.env
+.env.*
+.claude/settings.local.json
