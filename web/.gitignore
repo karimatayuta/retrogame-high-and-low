@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dev-dist/
+coverage/
+*.local
+# visual QA screenshots from scripts/play.mjs / shot.mjs (curated ones live in docs/)
+.qa/
+# playwright / test output
+test-results/
+playwright-report/
+*.tsbuildinfo
+.vite/

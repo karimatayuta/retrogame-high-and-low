@@ -1,0 +1,41 @@
+{
+  "name": "twinjokers-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "FREE DEAL TWIN JOKERS (PROG) — retro web edition (TypeScript + Vite + PixiJS)",
+  "packageManager": "bun@1.3.14",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:slow": "vitest run --project slow",
+    "smoke": "bun tests/e2e/smoke.mjs",
+    "check": "bun run typecheck && bun run lint && bun run test",
+    "icons": "bun scripts/gen-icons.mjs",
+    "pwa:check": "bun run build && bun scripts/offline-check.mjs --serve"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "howler": "^2.2.4",
+    "pixi-filters": "^6.1.5",
+    "pixi.js": "^8.22.0",
+    "xstate": "^5.33.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/howler": "^2.2.13",
+    "@types/node": "^26.6.4",
+    "eslint": "^10.12.0",
+    "playwright": "^1.63.0",
+    "typescript": "~6.0",
+    "typescript-eslint": "^8.71.0",
+    "vite": "^8.3.2",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.0.3"
+  }
+}
