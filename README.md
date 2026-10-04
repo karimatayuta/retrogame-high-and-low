@@ -3,6 +3,8 @@
 90年代のゲームセンターにあったシグマ社のビデオポーカー「52JP（緑プログレ）」を、[Pyxel](https://github.com/kitao/pyxel) で再現したレトロゲームです。
 交換なしの5枚配り、ジョーカー2枚のワイルド、フリーゲーム、プログレッシブ、3種類のダブルダウン（STANDARD / HIGH & LOW / RED & BLACK）を遊べます。
 
+> **Web 版（TypeScript + Vite + PixiJS、スマホ・PWA 対応）は [`web/`](web/README.md) にあります。** `cd web && bun install && bun run dev`
+
 ![double down](docs/screenshot-double.png) ![high and low](docs/screenshot-highlow.png)
 
 ## 遊び方

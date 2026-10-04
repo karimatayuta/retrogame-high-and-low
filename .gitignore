@@ -33,3 +33,6 @@ save/
 .env
 .env.*
 .claude/settings.local.json
+
+# --- personal notes (not part of the project) ---
+memo.md
