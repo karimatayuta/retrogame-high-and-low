@@ -1,27 +1,17 @@
-# --- Python / uv ---
-.venv/
-__pycache__/
-*.py[cod]
-*.egg-info/
-build/
+# --- dependencies / build output (Bun + Vite) ---
+node_modules/
 dist/
+dev-dist/
+.vite/
+*.tsbuildinfo
+coverage/
+*.local
 
-# --- tool caches ---
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
-.coverage
-htmlcov/
-
-# --- game runtime output ---
-# save data defaults to ~/.twinjokers/save.json (outside the repo);
-# these cover TWINJOKERS_SAVE pointed inside the repo
-save/
-*.save.json
-# visual QA screenshots (TWINJOKERS_SCREENSHOT / TWINJOKERS_SHOT_DIR); curated ones live in docs/
+# --- test / QA output ---
+# screenshots from scripts/play.mjs / shot.mjs (curated ones live in docs/)
 .qa/
-# sound exports from pyxel Sound.save
-*.wav
+test-results/
+playwright-report/
 
 # --- editors / OS ---
 .DS_Store
@@ -33,3 +23,8 @@ save/
 .env
 .env.*
 .claude/settings.local.json
+
+# --- personal notes (not part of the project) ---
+memo.md
+# personal Claude Code settings (e.g. statusline pointing to ~/.claude)
+.claude/settings.json

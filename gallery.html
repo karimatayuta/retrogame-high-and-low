@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twin Jokers parts gallery</title>
+    <style>
+      body { margin: 0; background: #04140a; color: #4cff7a; font: 13px/1.4 monospace; padding: 12px; }
+      h2 { font-size: 14px; margin: 14px 0 6px; color: #ffd21f; }
+      canvas { display: block; image-rendering: pixelated; max-width: 100%; height: auto; border: 1px solid #136b35; }
+      button, label { font: inherit; margin: 2px 4px 2px 0; }
+      button { background: #0a3d1f; color: #4cff7a; border: 1px solid #1f9b4d; padding: 4px 8px; cursor: pointer; }
+      #sounds { max-width: 1000px; }
+    </style>
+  </head>
+  <body>
+    <h2>Parts catalog (palette / font / cards) &mdash; 640x480 logical, shown x2</h2>
+    <div id="catalog"></div>
+    <h2>Mock screen with CRT (320x240 logical, x2 = 640x480)</h2>
+    <label><input type="checkbox" id="crt" checked /> CRT on</label>
+    <label><input type="checkbox" id="bloom" checked /> bloom (needs reload)</label>
+    <div id="mock"></div>
+    <h2>Sounds</h2>
+    <label><input type="checkbox" id="mute" /> mute</label>
+    <div id="sounds"></div>
+    <script type="module" src="/src/presentation/galleryMain.ts"></script>
+  </body>
+</html>
